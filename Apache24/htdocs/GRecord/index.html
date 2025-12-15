@@ -1,0 +1,145 @@
+<!--
+Gesture Landmark Recording Page
+Author: Earl Thomas
+CMSC 495 7385
+University of Maryland Global Campus
+Description: This web page will be used to extract landmark coordinates of hand gestures. User will be able to download export 
+             extracted landmarks extracted landmarks as a JSON file to train prediction model. 
+
+Modified 11/23/2025: Removed JS functions and moved to SL2S_Function file. Functions will be executed in a modular fashion.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gesture Landmark Recorder</title>
+    <!--Tailwind Import-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Media Pipe Import-->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<!------------------ Start of Main HTML -------------------->
+
+<body class="bg-gray-900 min-h-screen flex flex-col items-center py-10 font-sans text-white">
+    <div class="min-h-[20vh] justify-items-center justify-center pt-12 font-serif">
+        <h1 class="text-4xl font-extrabold text-indigo-400 mb-2">Gesture Landmark Recorder</h1>
+        <h3 class="text-lg font-medium text-gray-400 mt-2">CMIT 495 7385</h3>
+        <h3 class="text-lg font-medium text-gray-400 mt-2">University of Maryland Global Campus</h3>
+    </div>
+    <div class="relative inline-block video-container mb-8 min-h-auto min-w-500 flex items-center justify-center pb-8"
+        style="transform: scaleX(-1)">
+        <video autoplay id="videoElement"></video>
+        <canvas id="output_canvas" class="absolute left-0 top-0"></canvas>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg w-full max-w-lg space-y-4">
+        <div>
+            <label for="gestureLabel" class="block text-sm font-medium text-gray-300">Gesture Label:</label>
+            <input type="text" id="gestureLabel"
+                class="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div id="statusDisplay" class="text-lg font-semibold text-center py-2 rounded-lg bg-gray-700">
+            Status: <span id="recordingStatus" class="text-red-400">IDLE</span>
+        </div>
+        <div class="text-center text-sm text-gray-400">
+            Total Samples Collected: <span id="sampleCount" class="text-indigo-400 font-bold">0</span>
+        </div>
+        <div class="flex space-x-4">
+            <button id="record"
+                class="flex-1 px-4 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-bold transition duration-150 shadow-md">
+                Start Recording
+            </button>
+            <button id="downloadButton"
+                class="flex-1 px-4 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-bold transition duration-150 shadow-md"
+                disabled>
+                Download Data (0 KB)
+            </button>
+            <button id="resetButton"
+                class="flex-1 px-4 py-3 bg-red-600 hover:bg-indigo-700 rounded-lg font-bold transition duration-150 shadow-md">
+                Reset
+            </button>
+        </div>
+    </div>
+    <!------------------ End of Main HTML -------------------->
+
+    <!------------------ Start of Javascript -------------------->
+    <script type="module">
+        //Import Statements
+        import { FilesetResolver, HandLandmarker } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/vision_bundle.js"
+        import { loadMP, initWebcam, capture, downloadData, downloadSize, resetData, initRecordValues, checkRecordState, extractLandmarks } from "../SL2S_Functions.js"
+
+        //Global Variables 
+        let drawLandmarks = window.drawLandmarks
+        let handLandmarker = undefined
+        let lastVideoTime = -1
+        let isRecording = false
+        let trainingData = []
+
+        const video = document.querySelector("#videoElement")
+        const canvasElement = document.getElementById("output_canvas")
+        const canvasCtx = canvasElement.getContext("2d")
+        const labelName = document.getElementById("gestureLabel")
+        const recordingStatus = document.getElementById("recordingStatus")
+
+        //Loads Media Pipe and Enable Webcam
+        async function init() {
+            handLandmarker = await loadMP()
+            await initWebcam(video)
+            video.addEventListener("loadeddata", main)
+            initRecordValues()
+        }
+
+        //Main Function - Draws Landmarks and Extracts data
+        async function main() {
+            if (!handLandmarker) {
+                window.requestAnimationFrame(main)
+                return
+            }
+
+            canvasElement.width = video.videoWidth
+            canvasElement.height = video.videoHeight
+
+            let startTimeMs = performance.now()
+
+            if (lastVideoTime !== video.currentTime) {
+                lastVideoTime = video.currentTime
+
+                const results = handLandmarker.detectForVideo(video, startTimeMs)
+
+                canvasCtx.save()
+                canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height)
+                if (results.landmarks[0] && results.landmarks[0].length > 0) {
+                    for (const landmarks of results.landmarks) {
+                        drawLandmarks(canvasCtx, landmarks, { color: "#FF0000", lineWidth: 2 })
+                        if (checkRecordState()) {
+                            const coordinates = extractLandmarks(landmarks)
+
+                            trainingData.push({
+                                features: coordinates,
+                                label: labelName.value.trim()
+                            })
+
+                            sampleCount.textContent = trainingData.length
+                            downloadSize(trainingData)
+                        }
+                    }
+                }
+                canvasCtx.restore()
+            }
+
+            window.requestAnimationFrame(main)
+        }
+        init()
+        
+        //Button Listeners
+        record.addEventListener('click', capture)
+        downloadButton.addEventListener('click', downloadData)
+        resetButton.addEventListener('click', resetData)
+        record.disabled = true
+    </script>
+    <!------------------ End of Javascript -------------------->
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+[Fri Nov 14 22:08:53.289589 2025] [ssl:warn] [pid 6728:tid 472] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Nov 14 22:08:53.314778 2025] [ssl:warn] [pid 6728:tid 472] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Nov 14 22:08:53.376423 2025] [mpm_winnt:notice] [pid 6728:tid 472] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Fri Nov 14 22:08:53.376423 2025] [mpm_winnt:notice] [pid 6728:tid 472] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Fri Nov 14 22:08:53.377432 2025] [core:notice] [pid 6728:tid 472] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Fri Nov 14 22:08:53.380435 2025] [mpm_winnt:notice] [pid 6728:tid 472] AH00418: Parent: Created child process 24664
+[Fri Nov 14 22:08:53.736303 2025] [ssl:warn] [pid 24664:tid 468] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Nov 14 22:08:53.759135 2025] [ssl:warn] [pid 24664:tid 468] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Nov 14 22:08:53.777139 2025] [mpm_winnt:notice] [pid 24664:tid 468] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 15 16:30:58.440646 2025] [mpm_winnt:notice] [pid 6728:tid 472] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Nov 15 16:31:00.442493 2025] [mpm_winnt:notice] [pid 24664:tid 468] AH00364: Child: All worker threads have exited.
+[Sat Nov 15 16:31:00.466320 2025] [mpm_winnt:notice] [pid 6728:tid 472] AH00430: Parent: Child process 24664 exited successfully.
+[Sat Nov 15 16:31:03.556090 2025] [ssl:warn] [pid 37776:tid 464] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 16:31:03.583570 2025] [ssl:warn] [pid 37776:tid 464] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 16:31:03.601830 2025] [mpm_winnt:notice] [pid 37776:tid 464] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sat Nov 15 16:31:03.601830 2025] [mpm_winnt:notice] [pid 37776:tid 464] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sat Nov 15 16:31:03.602335 2025] [core:notice] [pid 37776:tid 464] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sat Nov 15 16:31:03.605370 2025] [mpm_winnt:notice] [pid 37776:tid 464] AH00418: Parent: Created child process 29860
+[Sat Nov 15 16:31:03.855976 2025] [ssl:warn] [pid 29860:tid 492] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 16:31:03.877778 2025] [ssl:warn] [pid 29860:tid 492] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 16:31:03.895998 2025] [mpm_winnt:notice] [pid 29860:tid 492] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 15 18:08:37.550530 2025] [allowmethods:error] [pid 29860:tid 1212] [client ::1:10330] AH01623: client method denied by server configuration: 'PUT' to C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24/htdocs/
+[Sat Nov 15 18:09:22.423693 2025] [allowmethods:error] [pid 29860:tid 1212] [client ::1:7503] AH01623: client method denied by server configuration: 'OPTIONS' to C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24/htdocs/
+[Sat Nov 15 18:21:29.558549 2025] [mpm_winnt:notice] [pid 37776:tid 464] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Nov 15 18:21:31.566667 2025] [mpm_winnt:notice] [pid 29860:tid 492] AH00364: Child: All worker threads have exited.
+[Sat Nov 15 18:21:31.588509 2025] [mpm_winnt:notice] [pid 37776:tid 464] AH00430: Parent: Child process 29860 exited successfully.
+[Sat Nov 15 18:21:33.826415 2025] [ssl:warn] [pid 30984:tid 488] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:21:33.850423 2025] [ssl:warn] [pid 30984:tid 488] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:21:33.867930 2025] [mpm_winnt:notice] [pid 30984:tid 488] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sat Nov 15 18:21:33.867930 2025] [mpm_winnt:notice] [pid 30984:tid 488] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sat Nov 15 18:21:33.867930 2025] [core:notice] [pid 30984:tid 488] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sat Nov 15 18:21:33.870931 2025] [mpm_winnt:notice] [pid 30984:tid 488] AH00418: Parent: Created child process 22700
+[Sat Nov 15 18:21:34.120998 2025] [ssl:warn] [pid 22700:tid 524] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:21:34.144004 2025] [ssl:warn] [pid 22700:tid 524] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:21:34.162512 2025] [mpm_winnt:notice] [pid 22700:tid 524] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 15 18:24:34.928349 2025] [mpm_winnt:notice] [pid 30984:tid 488] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Nov 15 18:24:36.950447 2025] [mpm_winnt:notice] [pid 22700:tid 524] AH00364: Child: All worker threads have exited.
+[Sat Nov 15 18:24:36.970783 2025] [mpm_winnt:notice] [pid 30984:tid 488] AH00430: Parent: Child process 22700 exited successfully.
+[Sat Nov 15 18:24:39.188113 2025] [ssl:warn] [pid 28204:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:24:39.211119 2025] [ssl:warn] [pid 28204:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:24:39.228123 2025] [mpm_winnt:notice] [pid 28204:tid 452] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sat Nov 15 18:24:39.228123 2025] [mpm_winnt:notice] [pid 28204:tid 452] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sat Nov 15 18:24:39.228123 2025] [core:notice] [pid 28204:tid 452] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sat Nov 15 18:24:39.231123 2025] [mpm_winnt:notice] [pid 28204:tid 452] AH00418: Parent: Created child process 33192
+[Sat Nov 15 18:24:39.477284 2025] [ssl:warn] [pid 33192:tid 476] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:24:39.501290 2025] [ssl:warn] [pid 33192:tid 476] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:24:39.521295 2025] [mpm_winnt:notice] [pid 33192:tid 476] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 15 18:26:22.401641 2025] [mpm_winnt:notice] [pid 28204:tid 452] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Nov 15 18:26:24.419597 2025] [mpm_winnt:notice] [pid 33192:tid 476] AH00364: Child: All worker threads have exited.
+[Sat Nov 15 18:26:24.440603 2025] [mpm_winnt:notice] [pid 28204:tid 452] AH00430: Parent: Child process 33192 exited successfully.
+[Sat Nov 15 18:26:26.664166 2025] [ssl:warn] [pid 34000:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:26:26.689173 2025] [ssl:warn] [pid 34000:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:26:26.706684 2025] [mpm_winnt:notice] [pid 34000:tid 452] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sat Nov 15 18:26:26.706684 2025] [mpm_winnt:notice] [pid 34000:tid 452] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sat Nov 15 18:26:26.706684 2025] [core:notice] [pid 34000:tid 452] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sat Nov 15 18:26:26.709685 2025] [mpm_winnt:notice] [pid 34000:tid 452] AH00418: Parent: Created child process 27668
+[Sat Nov 15 18:26:27.072271 2025] [ssl:warn] [pid 27668:tid 480] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:26:27.094781 2025] [ssl:warn] [pid 27668:tid 480] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 15 18:26:27.112786 2025] [mpm_winnt:notice] [pid 27668:tid 480] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 15 18:30:00.508575 2025] [mpm_winnt:notice] [pid 34000:tid 452] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Nov 15 18:30:02.529469 2025] [mpm_winnt:notice] [pid 27668:tid 480] AH00364: Child: All worker threads have exited.
+[Sat Nov 15 18:30:02.548810 2025] [mpm_winnt:notice] [pid 34000:tid 452] AH00430: Parent: Child process 27668 exited successfully.
+[Wed Nov 19 09:02:31.066324 2025] [ssl:warn] [pid 6732:tid 152] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 19 09:02:31.131489 2025] [ssl:warn] [pid 6732:tid 152] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 19 09:02:31.271645 2025] [mpm_winnt:notice] [pid 6732:tid 152] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Wed Nov 19 09:02:31.271645 2025] [mpm_winnt:notice] [pid 6732:tid 152] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Wed Nov 19 09:02:31.271645 2025] [core:notice] [pid 6732:tid 152] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Wed Nov 19 09:02:31.271645 2025] [mpm_winnt:notice] [pid 6732:tid 152] AH00418: Parent: Created child process 9788
+[Wed Nov 19 09:02:31.699693 2025] [ssl:warn] [pid 9788:tid 520] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 19 09:02:31.728160 2025] [ssl:warn] [pid 9788:tid 520] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Nov 19 09:02:31.745195 2025] [mpm_winnt:notice] [pid 9788:tid 520] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 22 10:56:56.074586 2025] [mpm_winnt:notice] [pid 6732:tid 152] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Nov 22 10:56:58.095092 2025] [mpm_winnt:notice] [pid 9788:tid 520] AH00364: Child: All worker threads have exited.
+[Sat Nov 22 10:56:58.139647 2025] [mpm_winnt:notice] [pid 6732:tid 152] AH00430: Parent: Child process 9788 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+sl:warn] [pid 5688:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:03:27.409182 2025] [ssl:warn] [pid 5688:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:03:27.427187 2025] [mpm_winnt:notice] [pid 5688:tid 452] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sun Nov 23 16:03:27.427187 2025] [mpm_winnt:notice] [pid 5688:tid 452] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sun Nov 23 16:03:27.427187 2025] [core:notice] [pid 5688:tid 452] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sun Nov 23 16:03:27.430187 2025] [mpm_winnt:notice] [pid 5688:tid 452] AH00418: Parent: Created child process 21224
+[Sun Nov 23 16:03:27.680389 2025] [ssl:warn] [pid 21224:tid 468] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:03:27.703395 2025] [ssl:warn] [pid 21224:tid 468] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:03:27.722399 2025] [mpm_winnt:notice] [pid 21224:tid 468] AH00354: Child: Starting 64 worker threads.
+[Sun Nov 23 16:03:59.562004 2025] [mpm_winnt:notice] [pid 5688:tid 452] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Nov 23 16:04:01.567782 2025] [mpm_winnt:notice] [pid 21224:tid 468] AH00364: Child: All worker threads have exited.
+[Sun Nov 23 16:04:01.588035 2025] [mpm_winnt:notice] [pid 5688:tid 452] AH00430: Parent: Child process 21224 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+sl:warn] [pid 30124:tid 472] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:07:47.690840 2025] [ssl:warn] [pid 30124:tid 472] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:07:47.709844 2025] [mpm_winnt:notice] [pid 30124:tid 472] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sun Nov 23 16:07:47.709844 2025] [mpm_winnt:notice] [pid 30124:tid 472] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sun Nov 23 16:07:47.709844 2025] [core:notice] [pid 30124:tid 472] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sun Nov 23 16:07:47.712845 2025] [mpm_winnt:notice] [pid 30124:tid 472] AH00418: Parent: Created child process 20512
+[Sun Nov 23 16:07:47.961784 2025] [ssl:warn] [pid 20512:tid 484] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:07:47.985882 2025] [ssl:warn] [pid 20512:tid 484] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:07:48.003886 2025] [mpm_winnt:notice] [pid 20512:tid 484] AH00354: Child: Starting 64 worker threads.
+[Sun Nov 23 16:07:57.689205 2025] [mpm_winnt:notice] [pid 30124:tid 472] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Nov 23 16:07:59.712964 2025] [mpm_winnt:notice] [pid 20512:tid 484] AH00364: Child: All worker threads have exited.
+[Sun Nov 23 16:07:59.733732 2025] [mpm_winnt:notice] [pid 30124:tid 472] AH00430: Parent: Child process 20512 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+sl:warn] [pid 26968:tid 476] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:18:29.343973 2025] [ssl:warn] [pid 26968:tid 476] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:18:29.361978 2025] [mpm_winnt:notice] [pid 26968:tid 476] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sun Nov 23 16:18:29.361978 2025] [mpm_winnt:notice] [pid 26968:tid 476] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sun Nov 23 16:18:29.361978 2025] [core:notice] [pid 26968:tid 476] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sun Nov 23 16:18:29.364979 2025] [mpm_winnt:notice] [pid 26968:tid 476] AH00418: Parent: Created child process 14048
+[Sun Nov 23 16:18:29.717612 2025] [ssl:warn] [pid 14048:tid 492] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:18:29.742619 2025] [ssl:warn] [pid 14048:tid 492] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:18:29.760623 2025] [mpm_winnt:notice] [pid 14048:tid 492] AH00354: Child: Starting 64 worker threads.
+[Sun Nov 23 16:32:37.666878 2025] [mpm_winnt:notice] [pid 26968:tid 476] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Nov 23 16:32:39.675089 2025] [mpm_winnt:notice] [pid 14048:tid 492] AH00364: Child: All worker threads have exited.
+[Sun Nov 23 16:32:39.696105 2025] [mpm_winnt:notice] [pid 26968:tid 476] AH00430: Parent: Child process 14048 exited successfully.
+[Sun Nov 23 16:32:49.881487 2025] [ssl:warn] [pid 21140:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:32:49.906997 2025] [ssl:warn] [pid 21140:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:32:49.926002 2025] [mpm_winnt:notice] [pid 21140:tid 452] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sun Nov 23 16:32:49.926002 2025] [mpm_winnt:notice] [pid 21140:tid 452] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sun Nov 23 16:32:49.926002 2025] [core:notice] [pid 21140:tid 452] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sun Nov 23 16:32:49.929003 2025] [mpm_winnt:notice] [pid 21140:tid 452] AH00418: Parent: Created child process 20656
+[Sun Nov 23 16:32:50.181516 2025] [ssl:warn] [pid 20656:tid 468] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:32:50.206770 2025] [ssl:warn] [pid 20656:tid 468] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:32:50.225775 2025] [mpm_winnt:notice] [pid 20656:tid 468] AH00354: Child: Starting 64 worker threads.
+[Sun Nov 23 16:33:34.274979 2025] [mpm_winnt:notice] [pid 21140:tid 452] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Nov 23 16:33:36.291582 2025] [mpm_winnt:notice] [pid 20656:tid 468] AH00364: Child: All worker threads have exited.
+[Sun Nov 23 16:33:36.313217 2025] [mpm_winnt:notice] [pid 21140:tid 452] AH00430: Parent: Child process 20656 exited successfully.
+[Sun Nov 23 16:34:41.958608 2025] [ssl:warn] [pid 28524:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:34:41.986436 2025] [ssl:warn] [pid 28524:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:34:42.005145 2025] [mpm_winnt:notice] [pid 28524:tid 452] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sun Nov 23 16:34:42.005145 2025] [mpm_winnt:notice] [pid 28524:tid 452] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sun Nov 23 16:34:42.005145 2025] [core:notice] [pid 28524:tid 452] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sun Nov 23 16:34:42.009146 2025] [mpm_winnt:notice] [pid 28524:tid 452] AH00418: Parent: Created child process 3884
+[Sun Nov 23 16:34:42.265871 2025] [ssl:warn] [pid 3884:tid 488] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:34:42.292820 2025] [ssl:warn] [pid 3884:tid 488] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:34:42.311825 2025] [mpm_winnt:notice] [pid 3884:tid 488] AH00354: Child: Starting 64 worker threads.
+[Sun Nov 23 16:38:37.927271 2025] [mpm_winnt:notice] [pid 28524:tid 452] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Nov 23 16:38:39.938127 2025] [mpm_winnt:notice] [pid 3884:tid 488] AH00364: Child: All worker threads have exited.
+[Sun Nov 23 16:38:39.958404 2025] [mpm_winnt:notice] [pid 28524:tid 452] AH00430: Parent: Child process 3884 exited successfully.
+[Sun Nov 23 16:38:50.664825 2025] [ssl:warn] [pid 20180:tid 484] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:38:50.665827 2025] [ssl:warn] [pid 20180:tid 484] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:38:51.233994 2025] [ssl:warn] [pid 20180:tid 484] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:38:51.233994 2025] [ssl:warn] [pid 20180:tid 484] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:38:51.250999 2025] [mpm_winnt:notice] [pid 20180:tid 484] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sun Nov 23 16:38:51.250999 2025] [mpm_winnt:notice] [pid 20180:tid 484] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sun Nov 23 16:38:51.250999 2025] [core:notice] [pid 20180:tid 484] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sun Nov 23 16:38:51.253999 2025] [mpm_winnt:notice] [pid 20180:tid 484] AH00418: Parent: Created child process 12304
+[Sun Nov 23 16:38:51.876717 2025] [ssl:warn] [pid 12304:tid 468] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:38:51.877717 2025] [ssl:warn] [pid 12304:tid 468] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:38:52.133356 2025] [ssl:warn] [pid 12304:tid 468] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:38:52.133356 2025] [ssl:warn] [pid 12304:tid 468] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:38:52.152361 2025] [mpm_winnt:notice] [pid 12304:tid 468] AH00354: Child: Starting 64 worker threads.
+[Sun Nov 23 16:39:40.078924 2025] [mpm_winnt:notice] [pid 20180:tid 484] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Nov 23 16:39:42.098236 2025] [mpm_winnt:notice] [pid 12304:tid 468] AH00364: Child: All worker threads have exited.
+[Sun Nov 23 16:39:42.117719 2025] [mpm_winnt:notice] [pid 20180:tid 484] AH00430: Parent: Child process 12304 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+sl:warn] [pid 12404:tid 452] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:39:48.709062 2025] [ssl:warn] [pid 12404:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:39:48.737070 2025] [ssl:warn] [pid 12404:tid 452] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:39:48.737070 2025] [ssl:warn] [pid 12404:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:39:48.755073 2025] [mpm_winnt:notice] [pid 12404:tid 452] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sun Nov 23 16:39:48.755073 2025] [mpm_winnt:notice] [pid 12404:tid 452] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sun Nov 23 16:39:48.755073 2025] [core:notice] [pid 12404:tid 452] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sun Nov 23 16:39:48.758074 2025] [mpm_winnt:notice] [pid 12404:tid 452] AH00418: Parent: Created child process 11644
+[Sun Nov 23 16:39:49.009302 2025] [ssl:warn] [pid 11644:tid 484] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:39:49.010302 2025] [ssl:warn] [pid 11644:tid 484] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:39:49.035299 2025] [ssl:warn] [pid 11644:tid 484] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:39:49.035299 2025] [ssl:warn] [pid 11644:tid 484] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:39:49.054303 2025] [mpm_winnt:notice] [pid 11644:tid 484] AH00354: Child: Starting 64 worker threads.
+[Sun Nov 23 16:44:03.472110 2025] [mpm_winnt:notice] [pid 12404:tid 452] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Nov 23 16:44:05.487768 2025] [mpm_winnt:notice] [pid 11644:tid 484] AH00364: Child: All worker threads have exited.
+[Sun Nov 23 16:44:05.507031 2025] [mpm_winnt:notice] [pid 12404:tid 452] AH00430: Parent: Child process 11644 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+sl:warn] [pid 30428:tid 452] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:44:34.071291 2025] [ssl:warn] [pid 30428:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:44:34.098095 2025] [ssl:warn] [pid 30428:tid 452] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:44:34.098095 2025] [ssl:warn] [pid 30428:tid 452] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:44:34.115604 2025] [mpm_winnt:notice] [pid 30428:tid 452] AH00455: Apache/2.4.65 (Win64) OpenSSL/3.5.1 PHP/8.4.12 configured -- resuming normal operations
+[Sun Nov 23 16:44:34.115604 2025] [mpm_winnt:notice] [pid 30428:tid 452] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Sun Nov 23 16:44:34.115604 2025] [core:notice] [pid 30428:tid 452] AH00094: Command line: 'C:\\Users\\Earl\\OneDrive - UMGC\\HG2Speech\\SL2Speech\\Apache24\\bin\\httpd.exe -d C:/Users/Earl/OneDrive - UMGC/HG2Speech/SL2Speech/Apache24'
+[Sun Nov 23 16:44:34.118606 2025] [mpm_winnt:notice] [pid 30428:tid 452] AH00418: Parent: Created child process 15432
+[Sun Nov 23 16:44:34.365675 2025] [ssl:warn] [pid 15432:tid 468] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:44:34.366675 2025] [ssl:warn] [pid 15432:tid 468] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:44:34.390682 2025] [ssl:warn] [pid 15432:tid 468] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 23 16:44:34.390682 2025] [ssl:warn] [pid 15432:tid 468] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 23 16:44:34.409191 2025] [mpm_winnt:notice] [pid 15432:tid 468] AH00354: Child: Starting 64 worker threads.
+[Sun Nov 23 16:44:57.053538 2025] [mpm_winnt:notice] [pid 30428:tid 452] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Nov 23 16:44:59.065854 2025] [mpm_winnt:notice] [pid 15432:tid 468] AH00364: Child: All worker threads have exited.
+[Sun Nov 23 16:44:59.086790 2025] [mpm_winnt:notice] [pid 30428:tid 452] AH00430: Parent: Child process 15432 exited successfully.

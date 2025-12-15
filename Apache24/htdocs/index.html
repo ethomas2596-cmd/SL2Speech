@@ -1,0 +1,111 @@
+<!--
+SL2Speech predict page
+Author: Earl Thomas
+CMSC 495 7385
+University of Maryland Global Campus
+Description: This web page is the predict interface to translate Sign-Language gestures into speech.
+
+Modified 11/23/2025: Removed JS functions in HTML and moved to SL2S_Function file. Functions will be executed in a modular fashion.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title>SL2Speech</Title>
+    <!--Tailwind Import-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Media Pipe Import-->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+        crossorigin="anonymous"></script>
+    <!--TensorflowJs Import-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js"></script>
+</head>
+
+<!------------------ Start of predict HTML -------------------->
+
+<body class="bg-gray-900 min-h-screen flex flex-col items-center py-10 font-sans text-white">
+    <div class="min-h-screen min-w-screen justify-items-center">
+        <div class="min-h-[20vh] justify-items-center justify-center pt-12 font-serif">
+            <h1 class="text-4xl font-extrabold text-indigo-400 mb-2">Sign Language to Speech Interpretor</h1>
+            <h3 class="text-lg font-medium text-gray-400 mt-2">CMIT 495 7385</h3>
+            <h3 class="text-lg font-medium text-gray-400 mt-2">University of Maryland Global Campus</h3>
+        </div>
+        <div class="relative inline-block video-container mb-8 min-h-auto min-w-500 flex items-center justify-center pb-8"
+            style="transform: scaleX(-1)">
+            <video autoplay="true" id="videoElement"></video>
+            <canvas id="output_canvas" class="absolute left-0 top-0"></canvas>
+        </div>
+        <div
+            class="min-h-[20vh] justify-items-center block text-sm font-medium text-gray-300 bg-gray-800 p-6 rounded-xl shadow-lg min-w-full max-w-lg space-y-4">
+            <h2 class="text-gray-400">Translation</h2>
+            <p id="predictionOut">-</p>
+            <p><span id="confidenceOut">-</span>%</p>
+            <audio id="player"></audio>
+        </div>
+    </div>
+    <!------------------ End of predict HTML -------------------->
+
+    <!------------------ Start of Javascript -------------------->
+    <script type="module">
+        import { FilesetResolver, HandLandmarker } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/vision_bundle.js"
+        import { extractLandmarks, predictGesture, initMainValues, checkPlayState, loadMP, initWebcam } from "./SL2S_Functions.js"
+
+        //Global Vars
+        let handLandmarker = undefined
+        let lastVideoTime = -1
+        let webcamRunning = false
+      
+        const video = document.getElementById("videoElement")
+        const canvasElement = document.getElementById("output_canvas")
+        const canvasCtx = canvasElement.getContext("2d")
+        const player = document.getElementById('player')
+        
+        //Initializes all required components to perform predictions
+        async function init() {
+            handLandmarker = await loadMP()
+            await initMainValues()
+            await initWebcam(video)
+            video.addEventListener("loadeddata", predict)
+        }
+
+        init()
+        
+        //Main Function - Extracts live landmarks and feeds into prediction model
+        async function predict() {
+            canvasElement.width = video.videoWidth
+            canvasElement.height = video.videoHeight
+            if (!handLandmarker) {
+                console.warn("Media Pipe API not ready")
+                return
+            }
+            let startTimeMs = performance.now()
+
+            if (lastVideoTime !== video.currentTime) {
+                lastVideoTime = video.currentTime
+
+                const results = handLandmarker.detectForVideo(video, startTimeMs);
+
+
+                canvasCtx.save()
+                canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height)
+                
+                //Checks to see if audio is playing
+                if (checkPlayState()) {
+                    window.requestAnimationFrame(predict)
+                    return
+                }
+
+                //Checks to see if Media Pipe Extracted Hand landmarks
+                if (results.landmarks.length > 0) {
+                    const coordinates = extractLandmarks(results.landmarks[0])
+                    predictGesture(coordinates)
+                }
+                canvasCtx.restore();
+            }
+            window.requestAnimationFrame(predict)
+        }
+    </script>
+    <!------------------ End of Javascript -------------------->
+</body>
+
+</html>
