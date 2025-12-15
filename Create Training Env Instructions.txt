@@ -1,0 +1,20 @@
+The instructions below will be used to create a virtual environment to train the Sign-Language Interpreter prediction Model. Due to TensorFlowJS utilizing deprecated NumPy functions, a downgrade is required to execute the Python scripts. 
+
+See requirements in path below:
+
+HG2Speech\Requirements.txt
+
+
+Instructions:
+   
+   1. Execute the install_anaconda.bat as Admin 
+   2. Open Anaconda prompt, and navigate to the application directory
+	
+	Example: cd C:\SL2Speech.com
+
+   3. Execute the build_env.bat
+	- If Anaconda prompt shows (base) C:\SL2Speech.com, execute the commands below
+	
+	conda activate Project_Env
+	pip install Keras==2.10.0 Numpy==1.23.5 Tensorflow==2.10.0 Tensorflowjs==3.11.0 scikit-learn==1.7.2
+	
